@@ -97,7 +97,7 @@ async def download(event):
                     if user_id := int(regex.group(1)) :
                         msg_id = int(regex.group(2))
                         if await event.client.send_message(entity=user_id, message=event.message, reply_to=msg_id):
-                            await event.client.edit_message(event.chat_id,event.id,f"{event.message.message}\n sended")
+                            await event.client.edit_message(event.chat_id,event.id,f"{event.message.message}\n enviado")
                         
                         
                     
